@@ -1,4 +1,6 @@
-import Hello from './Hello';
+
+import Home from './home';
+import {Route} from 'react-router-dom';
 
 function App() {
   const name = 'style test...';
@@ -10,7 +12,7 @@ function App() {
   }
   return (
     <div>
-      <Hello/>
+      <Route path="/home" component={Home} />
       <div style={style}>{name}</div>
     </div>
   );
